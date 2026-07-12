@@ -1,0 +1,715 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+:root {
+
+    --background: #ffffff;
+
+    --foreground: #111111;
+
+    --muted: #777777;
+
+    --line: #dedede;
+
+}
+
+
+body {
+
+    margin: 0;
+
+    background: var(--background);
+
+    color: var(--foreground);
+
+    font-family:
+
+        "Space Mono",
+
+        monospace;
+
+}
+
+
+button {
+
+    font-family: inherit;
+
+}
+
+
+main {
+
+    width:
+
+        min(
+
+            1100px,
+
+            calc(100% - 36px)
+
+        );
+
+    margin:
+
+        0 auto;
+
+}
+
+
+
+/* TOP BAR */
+
+
+.topbar {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding:
+
+        24px 0;
+
+    border-bottom:
+
+        1px solid var(--line);
+
+    font-size:
+
+        11px;
+
+    letter-spacing:
+
+        0.08em;
+
+}
+
+
+
+/* HERO */
+
+
+.hero {
+
+    min-height:
+
+        72vh;
+
+    display:
+
+        flex;
+
+    flex-direction:
+
+        column;
+
+    justify-content:
+
+        center;
+
+    align-items:
+
+        center;
+
+    text-align:
+
+        center;
+
+    padding:
+
+        70px 0;
+
+}
+
+
+h1 {
+
+    font-size:
+
+        clamp(
+
+            58px,
+
+            16vw,
+
+            150px
+
+        );
+
+    line-height:
+
+        0.9;
+
+    margin:
+
+        22px 0;
+
+    letter-spacing:
+
+        -0.08em;
+
+}
+
+
+.message {
+
+    margin:
+
+        0 0 48px;
+
+    font-size:
+
+        clamp(
+
+            12px,
+
+            2.5vw,
+
+            17px
+
+        );
+
+    letter-spacing:
+
+        0.08em;
+
+}
+
+
+
+/* COUNTDOWN */
+
+
+.countdown {
+
+    width:
+
+        min(
+
+            720px,
+
+            100%
+
+        );
+
+    display:
+
+        grid;
+
+    grid-template-columns:
+
+        repeat(
+
+            4,
+
+            1fr
+
+        );
+
+    border:
+
+        1px solid var(--foreground);
+
+}
+
+
+.countdown div {
+
+    padding:
+
+        22px 8px;
+
+    border-right:
+
+        1px solid var(--foreground);
+
+}
+
+
+.countdown div:last-child {
+
+    border-right:
+
+        0;
+
+}
+
+
+.countdown strong {
+
+    display:
+
+        block;
+
+    font-size:
+
+        clamp(
+
+            24px,
+
+            6vw,
+
+            52px
+
+        );
+
+}
+
+
+.countdown span {
+
+    display:
+
+        block;
+
+    margin-top:
+
+        6px;
+
+    font-size:
+
+        9px;
+
+    letter-spacing:
+
+        0.12em;
+
+}
+
+
+
+/* INFORMATION */
+
+
+.no-context {
+
+    margin-top:
+
+        24px;
+
+    font-size:
+
+        10px;
+
+    letter-spacing:
+
+        0.14em;
+
+    color:
+
+        var(--muted);
+
+}
+
+
+
+/* SIGNAL BUTTON */
+
+
+#signalButton {
+
+    margin-top:
+
+        28px;
+
+    padding:
+
+        12px 18px;
+
+    background:
+
+        transparent;
+
+    color:
+
+        var(--foreground);
+
+    border:
+
+        1px solid var(--foreground);
+
+    cursor:
+
+        pointer;
+
+}
+
+
+#signalButton:hover {
+
+    background:
+
+        var(--foreground);
+
+    color:
+
+        var(--background);
+
+}
+
+
+.signal {
+
+    height:
+
+        20px;
+
+    margin:
+
+        14px 0 0;
+
+    font-size:
+
+        10px;
+
+    color:
+
+        var(--muted);
+
+}
+
+
+
+/* OBSERVATION ARCHIVE */
+
+
+.archive {
+
+    padding:
+
+        70px 0 110px;
+
+    border-top:
+
+        1px solid var(--line);
+
+}
+
+
+.section-heading {
+
+    display:
+
+        flex;
+
+    justify-content:
+
+        space-between;
+
+    padding-bottom:
+
+        18px;
+
+    border-bottom:
+
+        1px solid var(--foreground);
+
+    font-size:
+
+        11px;
+
+    letter-spacing:
+
+        0.08em;
+
+}
+
+
+.observation {
+
+    max-width:
+
+        760px;
+
+    padding:
+
+        70px 0;
+
+    border-bottom:
+
+        1px solid var(--line);
+
+}
+
+
+.observation p {
+
+    font-size:
+
+        clamp(
+
+            25px,
+
+            5vw,
+
+            54px
+
+        );
+
+    line-height:
+
+        1.2;
+
+    letter-spacing:
+
+        -0.04em;
+
+    margin:
+
+        0 0 28px;
+
+}
+
+
+.observation small {
+
+    color:
+
+        var(--muted);
+
+}
+
+
+
+/* FOOTER */
+
+
+footer {
+
+    display:
+
+        flex;
+
+    justify-content:
+
+        space-between;
+
+    align-items:
+
+        center;
+
+    padding:
+
+        22px 0 34px;
+
+    border-top:
+
+        1px solid var(--line);
+
+    font-size:
+
+        11px;
+
+    letter-spacing:
+
+        0.08em;
+
+}
+
+
+#hiddenTrigger {
+
+    border:
+
+        0;
+
+    background:
+
+        transparent;
+
+    cursor:
+
+        pointer;
+
+    padding:
+
+        12px;
+
+}
+
+
+
+/* SECRET SCREEN */
+
+
+.secret {
+
+    position:
+
+        fixed;
+
+    inset:
+
+        0;
+
+    background:
+
+        var(--foreground);
+
+    color:
+
+        var(--background);
+
+    display:
+
+        none;
+
+    place-items:
+
+        center;
+
+    text-align:
+
+        center;
+
+    padding:
+
+        30px;
+
+    z-index:
+
+        10;
+
+}
+
+
+.secret.open {
+
+    display:
+
+        grid;
+
+}
+
+
+.secret p,
+
+.secret span {
+
+    font-size:
+
+        11px;
+
+    letter-spacing:
+
+        0.12em;
+
+}
+
+
+.secret h2 {
+
+    max-width:
+
+        700px;
+
+    font-size:
+
+        clamp(
+
+            30px,
+
+            7vw,
+
+            72px
+
+        );
+
+}
+
+
+#closeSecret {
+
+    position:
+
+        absolute;
+
+    top:
+
+        22px;
+
+    right:
+
+        26px;
+
+    border:
+
+        0;
+
+    background:
+
+        transparent;
+
+    color:
+
+        white;
+
+    font-size:
+
+        32px;
+
+    cursor:
+
+        pointer;
+
+}
+
+
+
+/* MOBILE */
+
+
+@media (
+
+    max-width:
+
+    600px
+
+) {
+
+
+    .topbar {
+
+        align-items:
+
+            flex-start;
+
+    }
+
+
+    #status {
+
+        text-align:
+
+            right;
+
+    }
+
+
+    .countdown div {
+
+        padding:
+
+            18px 3px;
+
+    }
+
+
+    .countdown span {
+
+        font-size:
+
+            7px;
+
+    }
+
+
+}
+
