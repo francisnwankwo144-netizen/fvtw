@@ -185,16 +185,16 @@ setInterval(
 const signalMessages = [
 
 
-    "YOU ARE BEING OBSERVED.",
+    "KEEP CLICKING.",
 
 
     "DO YOU FEEL LIKE YOURSELF?",
 
 
-    "CONFORMITY TEST // INCOMPLETE.",
+    "TELL ME WHAT YOU WANT FROM ME.",
 
 
-    "THE WORLD IS WATCHING.",
+    "THE WORLD IS LISTENING.",
 
 
     "RETURN // 03.08.26.",
@@ -203,13 +203,10 @@ const signalMessages = [
     "WTF DOES FVTW MEAN?",
 
 
-    "TRANSMISSION INCOMPLETE // TRY AGAIN LATER",
+    "FVTW FINAL MASTER v38_REALFINAL_FINAL2.wav",
 
 
-    "IDENTITY WITHHELD // ACCESS DENIED",
-
-
-    "FILE CORRUPTED // UNTIL 3826",
+    ".............",
 
 
     "BEFORE YOU HEAR IT, YOU'LL SEE IT.",
