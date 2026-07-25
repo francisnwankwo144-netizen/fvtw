@@ -332,3 +332,18 @@ document
 
     );
 
+// ======================
+// LOGO GLITCH
+// ======================
+
+const logo = document.getElementById("logo");
+
+logo.setAttribute("data-text", "FVTW");
+
+logo.classList.add("glitch");
+
+setTimeout(() => {
+
+    logo.classList.remove("glitch");
+
+}, 5000);

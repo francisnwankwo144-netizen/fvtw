@@ -713,3 +713,58 @@ footer {
 
 }
 
+/* =========================
+   GLITCH EFFECT
+========================= */
+
+.glitch {
+    position: relative;
+    animation: glitch 0.12s infinite;
+}
+
+.glitch::before,
+.glitch::after {
+    content: attr(data-text);
+    position: absolute;
+    inset: 0;
+}
+
+.glitch::before {
+    color: red;
+    transform: translate(-2px, -1px);
+    opacity: .6;
+}
+
+.glitch::after {
+    color: cyan;
+    transform: translate(2px, 1px);
+    opacity: .6;
+}
+
+@keyframes glitch {
+
+    0% {
+        transform: translate(0);
+    }
+
+    20% {
+        transform: translate(-3px,2px);
+    }
+
+    40% {
+        transform: translate(3px,-2px);
+    }
+
+    60% {
+        transform: translate(-2px,-1px);
+    }
+
+    80% {
+        transform: translate(2px,2px);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+
+}
