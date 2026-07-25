@@ -332,18 +332,30 @@ document
 
     );
 
-// ======================
-// LOGO GLITCH
-// ======================
+// =========================
+// SIGNAL GLITCH
+// =========================
 
 const logo = document.getElementById("logo");
 
-logo.setAttribute("data-text", "FVTW");
+function triggerGlitch() {
 
-logo.classList.add("glitch");
+    logo.classList.add("glitch");
 
-setTimeout(() => {
+    setTimeout(() => {
+        logo.classList.remove("glitch");
+    }, 180);
 
-    logo.classList.remove("glitch");
+}
 
-}, 5000);
+function randomGlitch() {
+
+    triggerGlitch();
+
+    const next = Math.random() * 7000 + 8000;
+
+    setTimeout(randomGlitch, next);
+
+}
+
+setTimeout(randomGlitch, 3000);

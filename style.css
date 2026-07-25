@@ -713,54 +713,60 @@ footer {
 
 }
 
-/* =========================
-   GLITCH EFFECT
-========================= */
+/* ================================
+   SIGNAL GLITCH
+================================ */
 
-.glitch {
+#logo {
     position: relative;
-    animation: glitch 0.12s infinite;
+    display: inline-block;
 }
 
-.glitch::before,
-.glitch::after {
+#logo.glitch {
+    animation: logoGlitch 0.18s linear;
+}
+
+#logo.glitch::before,
+#logo.glitch::after {
     content: attr(data-text);
     position: absolute;
-    inset: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
 }
 
-.glitch::before {
-    color: red;
-    transform: translate(-2px, -1px);
-    opacity: .6;
+#logo.glitch::before {
+    color: #00ffff;
+    transform: translate(-3px, 0);
+    opacity: .8;
 }
 
-.glitch::after {
-    color: cyan;
-    transform: translate(2px, 1px);
-    opacity: .6;
+#logo.glitch::after {
+    color: #ff003c;
+    transform: translate(3px, 0);
+    opacity: .8;
 }
 
-@keyframes glitch {
+@keyframes logoGlitch {
 
     0% {
         transform: translate(0);
     }
 
     20% {
-        transform: translate(-3px,2px);
+        transform: translate(-3px, 2px);
     }
 
     40% {
-        transform: translate(3px,-2px);
+        transform: translate(4px, -2px);
     }
 
     60% {
-        transform: translate(-2px,-1px);
+        transform: translate(-2px, 1px);
     }
 
     80% {
-        transform: translate(2px,2px);
+        transform: translate(2px, -2px);
     }
 
     100% {
