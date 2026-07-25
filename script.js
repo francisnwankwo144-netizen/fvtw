@@ -188,19 +188,19 @@ const signalMessages = [
     "KEEP CLICKING.",
 
 
-    "DO YOU FEEL LIKE YOURSELF?",
+    "YOU'VE MADE IT THIS FAR.",
 
 
     "TELL ME WHAT YOU WANT FROM ME.",
 
 
-    "THE WORLD IS LISTENING.",
+    "THE WORLD IS WATCHING.",
 
 
     "RETURN // 03.08.26.",
 
 
-    "WTF DOES FVTW MEAN?",
+    "OH I KNOW WHAT FVTW MEANS",
 
 
     "FVTW FINAL MASTER v38_REALFINAL_FINAL2.wav",
@@ -212,7 +212,7 @@ const signalMessages = [
     "BEFORE YOU HEAR IT, YOU'LL SEE IT.",
 
 
-    "STAY WHERE IT'S SAFE, OK?"
+    "DID YOU FIND THE BUTTON AT THE END OF THE WORLD?"
 
 
 ];
