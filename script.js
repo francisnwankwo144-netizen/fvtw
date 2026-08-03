@@ -191,7 +191,7 @@ const signalMessages = [
     "THE ALBUM ARRIVES JANUARY 22.",
 
 
-    "THE TITLE TRACK ARRIVES AUGUST 22.",
+    "THE TITLE TRACK ARRIVES AUGUST 21.",
 
 
     "THE STORY HAS BEGUN.",
@@ -204,6 +204,7 @@ const signalMessages = [
 
 
     "THANK YOU FOR STAYING",
+    
 
     "DON'T LET THE WORLD TELL YOU WHO TO BE."
 
