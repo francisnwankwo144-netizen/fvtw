@@ -9,7 +9,7 @@
 
 const target = new Date(
 
-    "2026-08-03T00:00:00+01:00"
+    "2026-08-21T00:00:00+01:00"
 
 ).getTime();
 
@@ -145,7 +145,7 @@ function updateCountdown() {
 
         ).textContent =
 
-            "THE WAIT IS OVER.";
+            "OUT NOW!";
 
 
         document.querySelector(
@@ -154,7 +154,7 @@ function updateCountdown() {
 
         ).textContent =
 
-            "RETURN TO THE SOURCE.";
+            "FIRST CHAPTER HAS BEGUN.";
 
 
     }
@@ -185,34 +185,27 @@ setInterval(
 const signalMessages = [
 
 
-    "KEEP CLICKING.",
+    "FRANCIS VS. THE WORLD",
 
 
-    "YOU'VE MADE IT THIS FAR.",
+    "THE ALBUM ARRIVES JANUARY 22.",
 
 
-    "TELL ME WHAT YOU WANT FROM ME.",
+    "THE TITLE TRACK ARRIVES AUGUST 22.",
 
 
-    "THE WORLD IS WATCHING.",
+    "THE STORY HAS BEGUN.",
 
 
-    "RETURN // 03.08.26.",
+    "RETURN // 21.08.26.",
 
 
     "OH I KNOW WHAT FVTW MEANS",
 
 
-    "FVTW FINAL MASTER v38_REALFINAL_FINAL2.wav",
+    "THANK YOU FOR STAYING",
 
-
-    ".............",
-
-
-    "BEFORE YOU HEAR IT, YOU'LL SEE IT.",
-
-
-    "DID YOU FIND THE BUTTON AT THE END OF THE WORLD?"
+    "DON'T LET THE WORLD TELL YOU WHO TO BE."
 
 
 ];

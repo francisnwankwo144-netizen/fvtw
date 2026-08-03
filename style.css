@@ -661,7 +661,19 @@ footer {
 
 }
 
+.album-date{
 
+    margin-top:45px;
+    
+    font-size:12px;
+    
+    letter-spacing:.18em;
+    
+    color:#777;
+    
+    line-height:2;
+    
+    }
 
 /* MOBILE */
 
@@ -774,3 +786,31 @@ footer {
     }
 
 }
+
+.chapter{
+
+    padding:90px 0;
+    
+    border-top:1px solid var(--line);
+    
+    max-width:700px;
+    
+    }
+    
+    .chapter h2{
+    
+    font-size:12px;
+    
+    letter-spacing:.2em;
+    
+    margin-bottom:25px;
+    
+    }
+    
+    .chapter p{
+    
+    font-size:22px;
+    
+    line-height:1.8;
+    
+    }
